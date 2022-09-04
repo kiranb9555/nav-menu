@@ -1,0 +1,169 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.login-wrap {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    border: 4px solid #000;
+    border-radius: 25px;
+    margin: 0 auto;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d04b8e+1,5b5ae6+100 */
+/*background: #d04b8e; /* Old browsers */
+/*background: -moz-linear-gradient(top,  #d04b8e 1%, #5b5ae6 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top,  #d04b8e 1%,#5b5ae6 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom,  #d04b8e 1%,#5b5ae6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d04b8e', endColorstr='#5b5ae6',GradientType=0 ); /* IE6-9 */
+/*display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}*/
+
+/*.login-wrap::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    right: 0;
+    width: 130px;
+    height: 30px;
+    background-color: #000;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin: 0 auto;
+}*/
+.login-wrap .form-group {
+    margin-bottom: 20px;
+}
+
+.login-wrap label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-wrap .form-control {
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: #fff;
+    color: #000;
+}
+
+.login-wrap .btn {
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    padding: 5px 15px;
+    border: 0;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+::placeholder {
+    /* color: #293041ac; */
+    font-size: 11px;
+    text-decoration: solid;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form {
+    width: 75%;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.form-group{
+    flex-direction: column;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.form-group div label {
+    /* color: #222736; */
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color : #f8f8fb;
+}
+
+.form-group input {
+    /* border: 2px solid #f8f8fb;
+    background-color: white;
+    color: #293041; */
+    outline: none;
+    margin-top: 5px;
+    border-radius: 0.25rem;
+    font-size: 12px;
+    border: 2px solid #434a5d;
+    background-color: #2e3446f2;
+    color:#bfc8e2;
+}
+
+
+.btn{
+    background-color: #556ee6;
+    color: white;
+    font-size: 12px;
+    border: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.form-control{
+    border:0;
+    padding: 10px;
+    color: black;
+}
+
+.bg-image {
+    background-image: url(./Images/mobile-removebg.png);
+    background-size: cover;
+    width: 20.7%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.llogin-wrap {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.llogin-wrap .element {
+    position: relative;
+    background: url(../Dashboard2-ui-navbar/Images/mobile-removebg.png) no-repeat center;
+    background-size: contain;
+    width: 250px;
+    height:500px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

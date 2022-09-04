@@ -1,0 +1,475 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden!important;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+}
+
+.body {
+  width: 100vw;
+}
+
+.m-container {
+  padding: 10px;
+  width: 100vw;
+}
+
+nav {
+  background-color: red;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgb(99, 99, 99);
+  font-size: 25px;
+}
+
+
+.second-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-side-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side-text p {
+  color: #c5bdbd;
+}
+
+.right-side {
+  height: 30px;
+  background-color: lightgrey;
+  border: 1px solid rgb(206, 204, 204);
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5px 0 5px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.right-side li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.info-input {
+  width: 100px;
+}
+
+button {
+  margin: 0;
+}
+
+button i {
+  margin: 10px;
+}
+
+.light-blue-btn {
+  background-color: aquamarine;
+}
+
+.light-blue-btn:hover {
+  background-color: rgb(177, 228, 211);
+}
+
+.dark-blue-btn {
+  background-color: darkcyan;
+}
+
+.dark-blue-btn:hover {
+  background-color: rgb(32, 209, 209);
+}
+
+.main-container-heading {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid rgb(155, 155, 155);
+}
+
+th {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.menu {
+  background-color: #3f4d67!important;
+  text-align: center;
+  width: 370px!important;
+}
+
+/* width */
+.menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.menu::-webkit-scrollbar-track {
+  background: #3f4d67; 
+}
+ 
+/* Handle */
+.menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+.menu:hover::-webkit-scrollbar-thumb{
+  background: linear-gradient(0deg,#1de9b6,#1dc4e9)
+}
+
+/* Handle on hover */
+.menu::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg,#1dc4e9,#1de9b6)
+}
+
+.avatar {
+  background-color: rgba(0,0,0,0.1);
+  margin: 0px 0px 50px 0px;
+  padding: 20px 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+ul {
+  padding: 0!important;
+  /* padding-right: 2rem; */
+}
+
+ul li {
+  transition: 0.3s;
+  padding: 0 2rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  list-style: none;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#sublist-item {
+  font-size: 14px!important;
+  font-weight:300!important;
+  padding-left: 13px;
+  border-bottom: none;
+  display: block;
+}
+
+.menu {
+  color: aqua;
+  background-color: rgb(5, 5, 17);
+  border-right: 1px solid grey;
+}
+
+
+/* dropDown */
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.dropdown-container {
+  /* background-color: red; */
+  /* display: none; */
+  list-style-type: none;
+  overflow: scroll;
+  transition: 0.3s;
+  height: 0px;
+  margin-left: -10px;
+}
+
+.dropdown-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.dropdown-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.dropdown-container a {
+  display: flex!important;
+  padding: 10px 0;
+  align-items: center;
+  font-size: 12px;
+}
+
+.dropdown-btn {
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.material-icons {
+  font-size: 16px !important;
+}
+
+.btn-update {
+  width: 70px;
+  font-size: 14px;
+}
+
+.action-column button {
+  margin: 2px;
+}
+
+tr>td {
+  font-size: 13px;
+}
+
+th {
+  font-size: 11px;
+  color: #818181;
+}
+
+.btn-orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #ff9b44;
+  font-weight: bold;
+  color: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.btn-orange span {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange:focus {
+  background-color: #ff9b44;
+  font-weight: bold;
+  color: white;
+  border-color: #ff9b44;
+}
+
+.hover-class,
+.other-icon,
+#sublist-item {
+  /* display: flex; */
+  align-items: center;
+  color: #a9b7d0;
+  font-weight: 400;
+  font-size: 14px;
+  /* color: rgba(255, 255, 255, 0.5); */
+}
+
+ul li:hover {
+  border-left: 2px solid #1dc4e9;
+  background-color: #333f54;
+}
+
+ul li:hover .other-icon {
+  color: #1dc4e9
+}
+
+ul li:hover .hover-class {
+  color: #1dc4e9
+}
+
+#sublist-item:hover {
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: blink 0.7s forwards infinite;
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+  }
+
+#sublist-item:hover .dot{
+  background-color: #1dc4e9;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  /* border: 1px solid #888; */
+  width: 50%;
+  padding: 40px;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top:0;
+  right: 0;
+  color: darkgray;
+  padding: 18px;
+  line-height: 0;
+  font-size: 30px;
+  font-weight: 200;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* .close:hover,
+.close:focus {
+} */
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-container{
+  background-color: white;
+  width: 40%;
+}
+
+.main-header {
+  box-shadow: 0px 9px 14px 2px #38455d99;
+  background-color: #38455d;
+  height: 70px;
+
+}

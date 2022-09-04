@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Invoices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="d-flex">
+        <nav class="menu" style="width: 250px; height: 100vh; overflow: scroll;" tabindex="0">
+            <div class="smartphone-menu-trigger"></div>
+            <header class="avatar">
+                <div></div>
+                <i class="fa fa-angle-double-left fa-lg" style="color: white"></i>
+            </header>
+            <ul>
+                <li tabindex="0" style="justify-content: space-between; display:flex" class="icon-Employees"><span>
+                    <span class="me-2"><i class="bi bi-house" style="color:#009688;"></i></span>
+                        <a href="./Dashboard.html"><span class="hover-class">Dashboard</span></a>
+                    </span>
+                </li>
+
+                <li>
+                    <div tabindex="0" class="icon-Products dropdown-btn">
+                        <a href="./Products.html">
+                            <span class="me-2"><i class="bi bi-bag" style="color:#009688;"></i></span><span class="hover-class"> Products</span>
+                        </a>
+                        <i class="bi bi-chevron-right" style="color: #009688;"></i>
+                        
+                    </div>
+                    <ul class="dropdown-container">
+                        <a href="./Category.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category</a>
+                        <a href="./Supplier.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supplier</a>
+                    </ul>
+                </li>
+
+                <li>
+                    <div tabindex="0" class="icon-Products dropdown-btn">
+                        <a href="#">
+                            <span class="me-2"><i class="bi bi-receipt" style="color:#009688;"></i></span><span class="hover-class"> Billing</span>
+                        </a>
+                        <i class="bi bi-chevron-right" style="color: #009688;"></i>
+                    </div>
+                    <ul class="dropdown-container">
+                        <a href="./NewBill.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Bill</a>
+                        <a href="./Invoices.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoice</a>
+                    </ul>
+                </li>
+
+                <li>
+                    <div tabindex="0" class="icon-Products dropdown-btn">
+                        <a href="#">
+                            <span class="me-2"><i class="bi bi-people" style="color:#009688;"></i></span><span class="hover-class"> Customer</span>
+                        </a>
+                    </div>
+                    <ul class="dropdown-container">
+                        <a href="./Retail.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retail</a>
+                        <a href="./Dealer.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dealer</a>
+                        <a href="./Enquiry.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enquiry</a>
+                    </ul>
+                </li>
+
+                <li>
+                    <div tabindex="0" class="icon-Products dropdown-btn">
+                        <a href="#">
+                            <span class="me-2"><i class="bi bi-person-badge" style="color:#009688;"></i></span><span class="hover-class"> HRM</span>
+                        </a>
+                        <i class="bi bi-chevron-right" style="color: #009688;"></i>
+                    </div>
+                    <ul class="dropdown-container">
+                        <a href="./Employees.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employees</a>
+                        <a href="./Jobs.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jobs</a>
+                    </ul>
+                </li>
+
+                <li tabindex="0" class="icon-Employees"><span>
+                    <span class="me-2"><i class="bi bi-box-seam" style="color:#009688;"></i></span>
+                        <a href="./Dashboard.html"><span class="hover-class">Delivery</span></a>
+                    </span>
+                </li>
+
+                <li>
+                    <div tabindex="0" class="icon-Products dropdown-btn">
+                        <a href="#">
+                            <span class="me-2"><i class="bi bi-bank" style="color:#009688;"></i></span><span class="hover-class"> Organisation</span>
+                        </a>
+                        <i class="bi bi-chevron-right" style="color: #009688;"></i>
+                    </div>
+                    <ul class="dropdown-container">
+                        <a href="./companyDetails.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compnay
+                            details</a>
+                    </ul>
+                </li>
+
+                <li>
+                    <div tabindex="0" class="icon-Products dropdown-btn">
+                        <a href="#">
+                            <span class="me-2"><i class="bi bi-file-earmark-bar-graph" style="color:#009688;"></i></i></span><span class="hover-class"> Report</span>
+                        </a>
+                        <i class="bi bi-chevron-right" style="color: #009688;"></i>
+                    </div>
+                    <ul class="dropdown-container">
+                        <a href="./Attendance.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attendance</a>
+                        <a href="./Salary.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salary</a>
+                        <a href="./Sales.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales</a>
+                        <a href="./Transaction.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction</a>
+                    </ul>
+                </li>
+
+                <li>
+                    <div tabindex="0" class="icon-Products dropdown-btn">
+                        <a href="#">
+                            <span class="me-2"><i class="bi bi-person-circle" style="color:#009688;"></i></i></span><span class="hover-class"> Account</span>
+                        </a>
+                        <i class="bi bi-chevron-right" style="color: #009688;"></i>
+                    </div>
+                    <ul class="dropdown-container">
+                        <a href="./Profile.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</a>
+                        <a href="./Setting.html" id="sublist-item"><div class="dot"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="m-container">
+            <!-- <nav>
+        </nav> -->
+            <div class="second-nav">
+                <div class="left-side">
+                    <!-- <div class="left-side-image">
+                    <img src="" alt="" srcset="">
+                        </div> -->
+                    <div class="left-side-text">
+                        <h3>New Invoice</h3>
+                        <p>Add New Invoice</p>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <li> Home </li>/
+                    <li> Invoice </li>/
+                    <li> New Invoice </li>
+                </div>
+            </div>
+            <div>
+                <button class="btn light-blue-btn">
+                    <i class="fa-solid fa-bars"></i>
+                    Manage Invoice
+                </button>
+                <button class="btn dark-blue-btn">
+                    <i class="fa-solid fa-bars"></i>
+                    POS Invoice
+                </button>
+            </div>
+            <div class="mt-3 main-container">
+                <h3 class="main-container-heading">New Invoice</h3>
+                <div style="margin:5px;width: 50%;">
+                    <div>
+                        <label for="customer-name">Customer Name</label>
+                        <input style=" margin-left: 30px;" name="customer-name" id="customer-name"
+                            placeholder="Customer Name" />
+                        <button style=" margin-left: 50px;" class="btn btn btn-success ml-2">New Customer</button>
+                    </div>
+                </div>
+                <div style="margin:5px;width: 50%;">
+                    <label for="store">Store</label>
+                    <input class="me-5" style=" margin-left: 30px;" name="store" id="store" placeholder="Store" />
+                    <label for="date">Date</label>
+                    <input type="date" style=" margin-left: 30px;" name="date" id="date" placeholder="Date" />
+                </div>
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item Information</th>
+                            <th scope="col">Unit</th>
+                            <th scope="col">Qnty</th>
+                            <th scope="col">Rate</th>
+                            <th scope="col">Dis/Pcs</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="form-control" placeholder="Product Name" />
+                            </td>
+                            <td>
+                                <select class="form-select info-input" aria-label="Default select example">
+                                    <option value="1">Select Option</option>
+                                    <option value="2">1</option>
+                                    <option value="3">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control info-input" placeholder="0" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control info-input" placeholder="None" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control info-input" placeholder="0.0" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control info-input" placeholder="0.0" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control info-input" placeholder="0.0" />
+                            </td>
+                            <td class="w-4">
+                                <input type="text" class="form-control " placeholder="0.0" />
+                            </td>
+                            <td>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" rowspan="4">
+                                <h4>Invoice Details</h4>
+                                <textarea rows="5" class="form-control" style="width: 100%;height: 100%;"
+                                    placeholder="Invoice Details">
+                        </textarea>
+                            </td>
+                            <td class="text-right" colspan="3">
+                                Product Discount :
+                            </td>
+                            <td colspan="1">
+                                <input placeholder="0.0" class="form-control" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right" colspan="3">
+                                Invoice Discount :
+                            </td>
+                            <td colspan="1">
+                                <input placeholder="0.0" class="form-control" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right" colspan="3">
+                                Tax :
+                            </td>
+                            <td colspan="1">
+                                <input placeholder="0.0" class="form-control" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right" colspan="3">
+                                Grand Total :
+                            </td>
+                            <td colspan="1">
+                                <input placeholder="0.0" class="form-control" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="btn light-blue-btn">Add New Item</button>
+                                <button class="btn btn-warning">Full Paid</button>
+                            </td>
+                            <td class="text-right" colspan="3">
+
+                            </td>
+                            <td class="text-right" colspan="3">
+                                Paid :
+                            </td>
+                            <td colspan="1">
+                                <input placeholder="0.0" class="form-control" />
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="btn btn-primary">Payment</button>
+                                <button class="btn btn-success">Submit</button>
+                            </td>
+                            <td class="text-right" colspan="3">
+
+                            </td>
+                            <td class="text-right" colspan="3">
+                                Due :
+                            </td>
+                            <td colspan="1">
+                                <input placeholder="0.0" class="form-control" />
+                            </td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                var val = dropdownContent.innerHTML.split('</a>')?.length - 1;
+                var height = val * 45;
+                if (dropdownContent.style.height === `${height}px`) {
+                    dropdownContent.style.height = "0px";
+                } else {
+                    dropdownContent.style.height = `${height}px`;
+                }
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
